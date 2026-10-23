@@ -1,69 +1,29 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {Col, Row} from 'react-bootstrap';
+import "@/app/css/constants.css";
+import Navbar from '@/components/layout/navbar/page.tsx'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Navbar />
+      <section id='main' className='container-fluid d-flex justify-content-center align-items-center bg-night-gradient'>
+        <Row className='text-light text-center'>
+          <h1 className="font-title display-1">NIHONGO CONTEST</h1>
+          <h1 className="font-title display-1">2026</h1>
+        </Row>
+      </section>
+
+      <section id='description' className="container-fluid d-flex bg-night2-gradient justify-content-center align-items-center">
+        <div className="d-flex align-items-center gap-7">
+          <Row>
+            <h1 className="TT-hoves display-3">Apa itu Nihongo Contest?</h1>
+            <p className="TT-Hoves text-light py-3">Nihongo contest merupakan kompentisi</p>
+          </Row>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
+
+
