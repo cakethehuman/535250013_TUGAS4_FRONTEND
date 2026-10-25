@@ -1,6 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@/app/css/constants.css";
-
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -33,13 +30,20 @@ async function Content({ params }: { params: Promise<{ slug: string }> }) {
             <p className="TT-Hoves text-light py-3">
               {data.desc}
             </p>
-          <Link
-            href="/perlombaan"
-            type="button"
-            className="px-5 py-3 text-decoration-none rounded-pill home-button home-button-text btn-outline-none">
-              kembali
-          </Link>
-
+          <Col className="d-flex gap-2">
+            <Link
+              href="https://google.com"
+              type="button"
+              className="px-5 py-3 text-decoration-none rounded-pill home-button home-button-text btn-outline-none">
+                Register
+            </Link>
+            <Link
+              href="/perlombaan"
+              type="button"
+              className="px-5 py-3 text-decoration-none rounded-pill home-button home-button-text btn-outline-none">
+                kembali
+            </Link>
+          </Col>
           </Col>
         </Row>
       </section>
