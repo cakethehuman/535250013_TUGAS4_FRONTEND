@@ -21,8 +21,8 @@ async function Content({ params }: { params: Promise<{ slug: string }> }) {
         <Row className="w-100 align-items-center">
           <Col xs={12} md={6} className="text-center mb-4 mb-md-0">
             <img
-              src="/images/KOGO_STICKER.png"
-              alt="kogo_sticker"
+              src={data.image}
+              alt={data.name}
               className="kogo_sticker"/>
           </Col>
           <Col xs={12} md={6}>
