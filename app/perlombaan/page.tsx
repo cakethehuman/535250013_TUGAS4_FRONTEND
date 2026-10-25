@@ -10,9 +10,9 @@ export default function Perlombaan(){
   return(
     <>
      <section id='lomba-home' className="d-flex bg-night3-gradient justify-content-center align-items-center min-vh-100">
-        <Row className='w-100 mx-0 justify-content-center text-center'>
+        <Row className='w-100 justify-content-center text-center'>
           <h1 className='display-1 mb-5'>Perlombaan</h1> 
-          <Row xs={1} md={2} lg={4} className="gap-2 justify-content-center"> 
+          <Row xs={1} md={2} lg={4}> 
           {lomba.map(({ name, slug }) => (
               <Link
                 key={slug}
