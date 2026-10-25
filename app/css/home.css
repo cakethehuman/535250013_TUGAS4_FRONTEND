@@ -1,0 +1,17 @@
+.home-button-text{
+  color: #ffe57a;
+}
+
+.home-button{
+  background-color: #2c6096
+}
+
+.home-button:hover{
+  background-color: #1f3559
+}
+
+.kogo_sticker {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}

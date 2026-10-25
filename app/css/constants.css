@@ -20,6 +20,18 @@
   height: 800px;
 }
 
+.bg-night3-gradient {
+  background: linear-gradient(
+    180deg,
+    #010121,
+    #1f3559,
+    #ffb443
+  );
+  width: 100%;
+  height: 800px;
+}
+
+
 .font-title{
   font-family: "Akaya Telivigala", system-ui;
   font-weight: 400;
